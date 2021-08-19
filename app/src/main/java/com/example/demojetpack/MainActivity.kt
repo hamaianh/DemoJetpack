@@ -22,7 +22,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.jetpackcompose.ui.theme.JetpackComposeTheme
+import com.example.demojetpack.theme.JetpackComposeTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -97,11 +97,12 @@ fun MessageCard(message: Message) {
     }
 }
 
-@Preview(showBackground = true, name = "Light Mode")
+@Preview(showBackground = true, name = "Light Mode", showSystemUi = true)
 @Preview(
     uiMode = UI_MODE_NIGHT_YES,
     showBackground = true,
-    name = "Dark Mode"
+    name = "Dark Mode",
+    showSystemUi = true
 )
 @Composable
 fun DefaultPreview() {
